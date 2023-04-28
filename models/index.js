@@ -9,3 +9,6 @@ User.hasMany(Accounts, {
 
 
 Account.belongsTo(User)
+
+
+module.exports = { User, Accounts };
