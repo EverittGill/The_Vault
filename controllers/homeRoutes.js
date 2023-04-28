@@ -14,10 +14,14 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Route to handle user authentication
-router.post('/login', async (req, res) => {
-  // Code to handle user authentication
-});
+router.get("/login", (req, res) => {
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect("homepage");
+      return;
+    }
+    res.render("login");
+  });
 
 // Route to handle user account creation
 router.post('/signup', async (req, res) => {

@@ -1,14 +1,10 @@
-const User = require('./user');
-const Accounts = require('./accounts');
-
+const User = require("./user");
+const Accounts = require("./accounts");
 
 User.hasMany(Accounts, {
-    foreignKey: 'username'
-}
-)
+  foreignKey: "username",
+});
 
-
-Account.belongsTo(User)
-
+Accounts.belongsTo(User);
 
 module.exports = { User, Accounts };
