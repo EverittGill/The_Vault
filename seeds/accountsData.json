@@ -2,26 +2,27 @@
     {
         "account_name": "Twitter",
         "URL": "https://twitter.com",
-        "password": "passw0rd1"
-  
+        "password": "passw0rd1",
+        "user_id": 1
     },
     {
         "account_name": "Gmail",
         "URL": "https://mail.google.com",
-        "password": "p@ssw0rd2"
+        "password": "p@ssw0rd2",
+        "user_id": 2
  
     },
     {
         "account_name": "LinkedIn",
         "URL": "https://www.linkedin.com",
-        "password": "mysecretpassword"
-
+        "password": "mysecretpassword",
+        "user_id": 1
     },
     {
         "account_name": "Amazon",
         "URL": "https://www.amazon.com",
-        "password": "mypassword123"
- 
+        "password": "mypassword123",
+        "user_id": 2
     }
       
     

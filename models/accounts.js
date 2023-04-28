@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
+const bcrypt = require('bcrypt');
 
 class Accounts extends Model {}
 
@@ -23,12 +24,12 @@ Accounts.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    username: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "user",
-        key: "name",
+        key: "id",
       },
     },
   },
