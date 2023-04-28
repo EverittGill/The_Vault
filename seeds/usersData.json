@@ -1,0 +1,19 @@
+[
+    {
+      "name": "JohnDoe",
+      "password": "sample_encrypted_password_1"
+    },
+    {
+      "name": "JaneSmith",
+      "password": "sample_encrypted_password_2"
+    },
+    {
+      "name": "AliceJohnson",
+      "password": "sample_encrypted_password_3"
+    },
+    {
+      "name": "BobWilliams",
+      "password": "sample_encrypted_password_4"
+    }
+  ]
+  
