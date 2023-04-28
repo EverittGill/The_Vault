@@ -1,21 +1,17 @@
 [
     {
-      "id": 1,
       "name": "JohnDoe",
       "password": "sample_encrypted_password_1"
     },
     {
-      "id": 2,
       "name": "JaneSmith",
       "password": "sample_encrypted_password_2"
     },
     {
-      "id": 3,
       "name": "AliceJohnson",
       "password": "sample_encrypted_password_3"
     },
     {
-      "id": 4,
       "name": "BobWilliams",
       "password": "sample_encrypted_password_4"
     }
