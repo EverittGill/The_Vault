@@ -1,0 +1,28 @@
+[
+    {
+        "account_name": "Twitter",
+        "URL": "https://twitter.com",
+        "password": "passw0rd1",
+        "username": "jsmith"
+    },
+    {
+        "account_name": "Gmail",
+        "URL": "https://mail.google.com",
+        "password": "p@ssw0rd2",
+        "username": "jsmith"
+    },
+    {
+        "account_name": "LinkedIn",
+        "URL": "https://www.linkedin.com",
+        "password": "mysecretpassword",
+        "username": "jdoe"
+    },
+    {
+        "account_name": "Amazon",
+        "URL": "https://www.amazon.com",
+        "password": "mypassword123",
+        "username": "jdoe"
+    }
+      
+    
+]
