@@ -7,11 +7,14 @@ const { User, Accounts } = require('../models');
 // Route to render the home page
 router.get('/', async (req, res) => {
   try {
-    const userData = await User.findAll({
-      include: [{ model: Accounts }],
+    const userData = await Accounts.findAll({
+      include: [{ model: User }],
     });
-    const accounts = userData.map(user => user.Accounts);
-    res.render('homepage', { accounts });
+    const accounts = userData.map(user => user.get({ plain:true }));
+    console.log(accounts);
+    res.render('homepage', { 
+      accounts 
+    });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Internal server error' });
