@@ -7,7 +7,11 @@ const { User, Accounts } = require('../models');
 // Route to render the home page
 router.get('/', async (req, res) => {
   try {
-    res.render('homepage');
+    const userData = await User.findAll({
+      include: [{ model: Accounts }],
+    });
+    const accounts = userData.map(user => user.Accounts);
+    res.render('homepage', { accounts });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Internal server error' });
@@ -22,12 +26,6 @@ router.get("/login", (req, res) => {
     }
     res.render("login");
   });
-
-// Route to handle user account creation
-router.post('/signup', async (req, res) => {
-  // Code to handle user account creation
-});
-
 
 
 module.exports = router;
