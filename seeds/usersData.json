@@ -1,18 +1,22 @@
 [
     {
       "name": "JohnDoe",
+      "email": "mark@gmai.com",
       "password": "sample_encrypted_password_1"
     },
     {
       "name": "JaneSmith",
+      "email": "stan@yahoo.com",
       "password": "sample_encrypted_password_2"
     },
     {
       "name": "AliceJohnson",
+      "email": "alice@aol.com",
       "password": "sample_encrypted_password_3"
     },
     {
       "name": "BobWilliams",
+      "email": "bob@gmail.com",
       "password": "sample_encrypted_password_4"
     }
   ]
