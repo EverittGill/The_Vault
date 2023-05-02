@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const { AES } = require("crypto-js");
+const { AES } = require("../server.js");
 
 const ENCRYPTION_KEY = "MySuperSecretKey";
 
