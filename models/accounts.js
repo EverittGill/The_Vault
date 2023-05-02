@@ -4,13 +4,7 @@ const { AES } = require("crypto-js");
 
 const ENCRYPTION_KEY = "MySuperSecretKey";
 
-class Accounts extends Model {
-  // Add a method to decrypt passwords
-  decryptPassword() {
-    const decryptedPassword = AES.decrypt(this.password, ENCRYPTION_KEY).toString();
-    return decryptedPassword;
-  }
-}
+class Accounts extends Model {}
 
 Accounts.init(
   {
