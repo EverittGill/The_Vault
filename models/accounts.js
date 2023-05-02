@@ -1,6 +1,8 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const bcrypt = require('bcrypt');
+const { AES } = require("crypto-js");
+
+const ENCRYPTION_KEY = "MySuperSecretKey";
 
 class Accounts extends Model {}
 
@@ -37,20 +39,19 @@ Accounts.init(
   {
     hooks: {
       async beforeCreate(newUserData) {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        // Encrypt the password using AES
+        const encryptedPassword = AES.encrypt(newUserData.password, ENCRYPTION_KEY).toString();
+        newUserData.password = encryptedPassword;
         return newUserData;
       },
       async beforeUpdate(updatedUserData) {
-        updatedUserData.password = await bcrypt.hash(
-          updatedUserData.password,
-          10
-        );
+        // Encrypt the password using AES
+        const encryptedPassword = AES.encrypt(updatedUserData.password, ENCRYPTION_KEY).toString();
+        updatedUserData.password = encryptedPassword;
         return updatedUserData;
       },
     },
-  // },
 
-  // {
     sequelize,
     timestamps: false,
     freezeTableName: true,
