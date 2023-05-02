@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const { AES } = require("../server.js");
+const { AES } = require("crypto-js");
 
 const ENCRYPTION_KEY = "MySuperSecretKey";
 
@@ -51,7 +51,7 @@ Accounts.init(
         return updatedUserData;
       },
     },
-
+    
     sequelize,
     timestamps: false,
     freezeTableName: true,
