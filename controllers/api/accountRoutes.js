@@ -58,7 +58,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try {
-        const accountsData = await accounts.destroy({
+        const accountsData = await Accounts.destroy({
             where: {
                 id: req.params.id,
             },
