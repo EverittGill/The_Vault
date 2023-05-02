@@ -19,7 +19,6 @@ router.get('/homepage', async (req, res) => {
       include: [{ model: User }],
     });
     const accounts = userData.map(user => user.get({ plain:true }));
-    console.log(accounts);
     res.render('homepage', { 
       accounts 
     });
