@@ -1,9 +1,77 @@
+@import url('https://fonts.cdnfonts.com/css/timesnow');
 
 
-element.style {
-    width: 500px;
-    height: 282px;
-    opacity: 1;
+#vault_img {
+    width: 1425px;
+    height: 1000px;
+    /* opacity: 1; */
     left: 0px;
     top: 0px;
+    padding-bottom: 30px;
+    padding-left: -10px;
+    /* position: absolute; */
+}
+
+.vault-title {
+    font-size: 60px;
+    font-family: 'Timesnow', sans-serif;
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.vault-title2 {
+    font-size: 70px;
+    font-family: 'Timesnow', sans-serif;
+    margin-top: -50px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* position: absolute; */
+   /* transform: translate(-50%,-50%); */
+   top: 50%;
+   left: 10%;
+   font-family: 'Times New Roman',serif;
+   letter-spacing: 5px;
+   font-size: 80px;
+   font-weight: bold;
+   background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 42%, 
+	#f6e27a 65%,
+	#f6f2c0 70%,
+	#f6e27a 75%,
+	#cb9b51 98%,
+	#462523 120%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+
+.form-group {
+    text-align: center;
+    padding: 5px;
+    
+}
+
+#pwd-label {
+    margin-left: 30px;
+}
+
+#password-login {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.btn-login {
+    text-align: center;
+}
+
+.signup_text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#copyright {
+    text-align: center;
 }
