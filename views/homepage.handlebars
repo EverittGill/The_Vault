@@ -1,5 +1,21 @@
-Hello World
-{{#each accounts}}
-<p>{{account_name}}</p>
-<p>{{password}}<button data-id="{{password}}">Decrypt</button></p>
+<div class="container-homepage">
+    <div class="homepage-intro">
+        <p class="homepage-vault-title2">YOUR VAULT</p>
+        <div class="tutorial">
+        <p>Logged in as {{username}}</p>
+        <p>Here's all your accounts</p>
+         <p>Click the button next to each of them to reveal the password you saved</p>
+         <p>Use the Edit Password button to update your password</p>
+        </div>
+    </div>
+<div class="account-list">
+{{#each accounts}} <br> <hr>
+<p class="homepage-account-name">{{account_name}}</p>
+<div class="homepage-password-render" >{{password}}</div>
+<button class="homepage-button" data-id="{{password}}">Show Password</button>
+<button class="homepage-button">Edit Password</button>
 {{/each}}
+</div>
+</div>
+
+<script src="./JS/homepage.js"></script>
