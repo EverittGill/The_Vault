@@ -1,11 +1,12 @@
 const ENCRYPTION_KEY = "MySuperSecretKey";
-const 
-
-decryptPassword = (password) => {
-    const decryptedPassword = AES.decrypt(password, ENCRYPTION_KEY).toString();
-    return decryptedPassword;
-  };
 
 const revealBtnHandler = async (event) => {
-    if(event.)
-}
+  const password = event.target.getAttribute("data-id");
+  const decryptedPassword = CryptoJS.AES.decrypt(password, ENCRYPTION_KEY);
+  console.log(decryptedPassword.toString(CryptoJS.enc.Utf8));
+  return decryptedPassword;
+};
+
+document
+  .querySelector(".account-list")
+  .addEventListener("click", revealBtnHandler);
