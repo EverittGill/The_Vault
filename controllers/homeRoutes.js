@@ -28,5 +28,9 @@ router.get('/homepage', async (req, res) => {
   }
 });
 
+router.get('/animation', (req,res) => {
+  res.render('animation')
+});
+
 module.exports = router;
 
