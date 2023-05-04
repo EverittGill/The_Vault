@@ -1,11 +1,12 @@
-<div class="container-homepage fade-in">
-  <div class="homepage-intro">
-    <p class="homepage-vault-title2">YOUR VAULT</p>
-    <div class="tutorial">
-      <p>Logged in as {{username}}</p>
-      <p>Here's all your accounts</p>
-      <p>Click the button next to each of them to reveal the password you saved</p>
-      <p>Use the Edit Password button to update your password</p>
+<div class="container-homepage">
+    <div class="homepage-intro">
+        <p class="homepage-vault-title2">YOUR VAULT</p>
+        <div class="tutorial">
+        <p>Logged in as {{username}}</p>
+        <p>Here's all your accounts</p>
+         <p>Click the button next to each of them to reveal the password you saved</p>
+         <p>Use the Edit Password button to update your password</p>
+        </div>
     </div>
   </div>
   <!-- Button trigger modal -->
@@ -29,25 +30,29 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Your Account Information</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
+            <form>
+        <div class="form-group">
+    <label for="exampleInputEmail1">Account Name</label>
+    <input type="text" class="form-control" id="account-name" aria-describedby="emailHelp" placeholder="Enter account name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Account URL</label>
+    <input type="url" class="form-control" id="account-url" aria-describedby="emailHelp" placeholder="url">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+     </div>
         <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="add-account" class="btn btn-primary">Add Account</button>
         </div>
+        </form>
       </div>
     </div>
   </div>
