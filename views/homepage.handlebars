@@ -1,44 +1,66 @@
 <div class="container-homepage fade-in">
-    <div class="homepage-intro">
-        <p class="homepage-vault-title2">YOUR VAULT</p>
-        <div class="tutorial">
-        <p>Logged in as {{username}}</p>
-        <p>Here's all your accounts</p>
-         <p>Click the button next to each of them to reveal the password you saved</p>
-         <p>Use the Edit Password button to update your password</p>
-        </div>
+  <div class="homepage-intro">
+    <p class="homepage-vault-title2">YOUR VAULT</p>
+    <div class="tutorial">
+      <p>Logged in as {{username}}</p>
+      <p>Here's all your accounts</p>
+      <p>Click the button next to each of them to reveal the password you saved</p>
+      <p>Use the Edit Password button to update your password</p>
     </div>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  </div>
+  <!-- Button trigger modal -->
+  <button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
     Launch demo modal
   </button>
-  
+
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="modal-body">
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
-<div class="account-list">
-{{#each accounts}} <br> <hr>
-<p class="homepage-account-name">{{account_name}}</p>
-<div class="homepage-password-render" >{{password}}</div>
-<button class="homepage-button" data-id="{{password}}">Show Password</button>
-<button class="homepage-button">Edit Password</button>
-{{/each}}
-</div>
+  <div class="account-list">
+    {{#each accounts}}
+      <br />
+      <hr />
+      <p class="homepage-account-name">{{account_name}}</p>
+      <div class="homepage-password-render">{{password}}</div>
+      <button class="homepage-button" data-id="{{password}}">Show Password</button>
+      <button class="homepage-button">Edit Password</button>
+    {{/each}}
+  </div>
 </div>
 
 <script src="./JS/homepage.js"></script>
