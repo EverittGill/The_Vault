@@ -6,9 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-         <a class="nav-link" href="#">Logout</a>
+         <a class="nav-link" href="#" id="logout">Logout</a>
       </div>
     </div>
   </div>
@@ -16,7 +14,7 @@
     <div class="homepage-intro">
         <p class="homepage-vault-title2">YOUR VAULT</p>
         <div class="tutorial">
-        <p>Logged in as {{username}}</p>
+        <p>Logged in as {{user}}</p>
         <p>Here's all your accounts</p>
          <p>Click the button next to each of them to reveal the password you saved</p>
          <p>Use the Edit Password button to update your password</p>
@@ -61,13 +59,29 @@
     </div>
   </div>
 <div class="account-list">
-{{#each accounts}} <br> <hr>
+{{#each accounts}} <br> <br> <hr> <br>
 <p class="homepage-account-name">{{account_name}}</p>
 <div class="homepage-password-render" >{{password}}</div>
-<button class="homepage-button common-button-style" data-id="{{password}}">Show Password</button>
-<button class="homepage-button common-button-style">Edit Password</button>
+<button class="homepage-button common-button-style me-2" data-id="{{password}}">Show Password</button>
+<button class="homepage-button common-button-style me-2">Edit Password</button>
 {{/each}}
 </div>
 </div>
 
 <script src="./JS/homepage.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
