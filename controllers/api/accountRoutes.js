@@ -29,7 +29,6 @@ router.post('/', async (req, res) => {
             password: req.body.password,
             user_id: req.session.user_id
         });
-        console.log(accountsData)
         res.status(200).json(accountsData);
     } catch (err) {
         res.status(400).json(err);

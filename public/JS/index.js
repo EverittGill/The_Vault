@@ -31,6 +31,7 @@ const loginFormHandler = async (event) => {
   })
 
   if (response.ok) {
+    console.log("what about here")
     document.location.replace('/homepage')
   } else {
     alert(response.statusText)
