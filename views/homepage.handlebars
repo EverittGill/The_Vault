@@ -1,4 +1,18 @@
 <div class="container-homepage">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
     <div class="homepage-intro">
         <p class="homepage-vault-title2">YOUR VAULT</p>
         <div class="tutorial">
@@ -8,16 +22,14 @@
          <p>Use the Edit Password button to update your password</p>
         </div>
     </div>
-  </div>
-  <!-- Button trigger modal -->
-  <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModal"
-  >
-    Launch demo modal
+
+        <!-- Button trigger modal -->
+   <div class="button-container">
+<button type="button" class="common-button-style homepage-button" id="new-account-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add New Account
   </button>
+  </div>
+
 
   <!-- Modal -->
   <div
@@ -56,16 +68,16 @@
       </div>
     </div>
   </div>
-  <div class="account-list">
-    {{#each accounts}}
-      <br />
-      <hr />
-      <p class="homepage-account-name">{{account_name}}</p>
-      <div class="homepage-password-render">{{password}}</div>
-      <button class="homepage-button" data-id="{{password}}">Show Password</button>
-      <button class="homepage-button">Edit Password</button>
-    {{/each}}
-  </div>
+
+<div class="account-list">
+{{#each accounts}} <br> <hr>
+<p class="homepage-account-name">{{account_name}}</p>
+<div class="homepage-password-render" >{{password}}</div>
+<button class="homepage-button common-button-style" data-id="{{password}}">Show Password</button>
+<button class="homepage-button common-button-style">Edit Password</button>
+{{/each}}
+</div>
+
 </div>
 
 <script src="./JS/homepage.js"></script>
