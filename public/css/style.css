@@ -331,3 +331,54 @@ video {
   height: 100%;
   object-fit: fill;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 390px) {
+    .tutorial {
+      font-size: 14px;
+    }
+    .homepage-vault-title2 {
+      font-size: 24px;
+    }
+    .homepage-account-name {
+      font-size: 18px;
+    }
+    .homepage-button {
+      font-size: 14px;
+      margin: 2vh;
+    }
+    .modal-title {
+      font-size: 18px;
+    }
+    .modal-footer .btn {
+      font-size: 14px;
+    }
+  }
+
