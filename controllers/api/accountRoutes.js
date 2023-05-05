@@ -22,7 +22,13 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
-        const accountsData = await Accounts.create(req.body);
+        
+        const accountsData = await Accounts.create({
+            account_name: req.body.account_name,
+            URL: req.body.URL,
+            password: req.body.password,
+            user_id: req.session.user_id
+        });
         res.status(200).json(accountsData);
     } catch (err) {
         res.status(400).json(err);
@@ -46,15 +52,6 @@ router.put('/:id', async (req, res) => {
         res.status(500).json(err);
     } 
 });
-
-
-
-
-
-
-
-
-
 
 router.delete('/:id', async (req, res) => {
     try {

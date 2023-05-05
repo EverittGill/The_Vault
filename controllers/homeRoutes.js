@@ -16,7 +16,9 @@ router.get("/", (req, res) => {
 router.get('/homepage', async (req, res) => {
   try {
     const userData = await Accounts.findAll({
+      where: {user_id: req.session.user_id},
       include: [{ model: User }],
+      
     });
     const accounts = userData.map(user => user.get({ plain:true }));
     res.render('homepage', { 
@@ -31,6 +33,50 @@ router.get('/homepage', async (req, res) => {
 router.get('/animation', (req,res) => {
   res.render('animation')
 });
+
+// posts a login request for an existing user.
+router.post('/login', async (req, res) => {
+  try {
+    const userData = await User.findOne({ where: { email: req.body.email } });
+    if (!userData) {
+      res
+        .status(400)
+        .json({ message: 'Incorrect email or password, please try again' });
+      return;
+    }
+    const validPassword = await userData.checkPassword(req.body.password);
+    
+    if (!validPassword) {
+      res
+        .status(400)
+        .json({ message: 'Incorrect email or password, please try again' });
+      return;
+    }
+
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      console.log(req.session.user_id); // log the value of logged_in
+      res.redirect('/homepage');
+    });
+    
+
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+// sends a logout request for the user
+router.post('/logout', (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
+});
+
 
 module.exports = router;
 
