@@ -138,11 +138,9 @@
 
 #copyright {
     text-align: center;
-<<<<<<< HEAD
     /* font-family: 'Timesnow', sans-serif; */
 }
-=======
-}
+
 
 
 .homepage-vault-title2 {
@@ -249,20 +247,3 @@
       transform: scale(30);
     }
   }
-
-  .fade-in {
-    opacity: 0;
-    animation: fadeIn ease 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
->>>>>>> d56275db7c44319c0995c2e1a96585f734516b90
