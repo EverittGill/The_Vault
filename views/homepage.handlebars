@@ -9,9 +9,11 @@
         </div>
     </div>
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+   <div class="button-container">
+<button type="button" class="common-button-style homepage-button" id="new-account-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add New Account
   </button>
+  </div>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -48,8 +50,8 @@
 {{#each accounts}} <br> <hr>
 <p class="homepage-account-name">{{account_name}}</p>
 <div class="homepage-password-render" >{{password}}</div>
-<button class="homepage-button" data-id="{{password}}">Show Password</button>
-<button class="homepage-button">Edit Password</button>
+<button class="homepage-button common-button-style" data-id="{{password}}">Show Password</button>
+<button class="homepage-button common-button-style">Edit Password</button>
 {{/each}}
 </div>
 </div>

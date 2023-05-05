@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/timesnow');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Share+Tech&display=swap');
 
 
 #vault_img {
@@ -120,8 +121,31 @@
    -webkit-background-clip:text;
 }
 
+.tutorial {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .common-button-style {
+    background-color: #229091;
+    border-color: #229091;
+    pointer-events: auto;
+    border-radius: 10px;
+  }
+  
 
 
+
+  #new-account-button {
+    pointer-events: auto; /* re-enable pointer events on the button so it is clickable */
+  }
+  
 
 .homepage-intro {   
     margin: 3%;
@@ -138,6 +162,7 @@
 .homepage-account-name {
     font-weight: bold;
     font-size: x-large;
+    font-family: 'Share Tech', sans-serif;
 }
 
 
@@ -154,22 +179,21 @@
 } */
 
 
-.homepage-button {
-    --c:  #229091; /* the color*/
-    
-    box-shadow: 0 0 0 .1em inset var(--c); 
-    --_g: linear-gradient(var(--c) 0 0) no-repeat;
-    background: 
-      var(--_g) calc(var(--_p,0%) - 100%) 0%,
-      var(--_g) calc(200% - var(--_p,0%)) 0%,
-      var(--_g) calc(var(--_p,0%) - 100%) 100%,
-      var(--_g) calc(200% - var(--_p,0%)) 100%;
-    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
-    outline-offset: .1em;
-    transition: background-size .4s, background-position 0s .4s;
-    float: right;
-    margin-left: 3%;
-    border-radius: 10px;
+.homepage-button{
+        --c: #229091; /* the color */
+      
+        box-shadow: 0 0 0 .1em inset var(--c);
+        --_g: linear-gradient(var(--c) 0 0) no-repeat;
+        background:
+          var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+          var(--_g) calc(200% - var(--_p, 0%)) 0%,
+          var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+          var(--_g) calc(200% - var(--_p, 0%)) 100%;
+        background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
+        outline-offset: .1em;
+        transition: background-size .4s, background-position 0s .4s;
+        float: right;
+        margin-left: 3%;   
   }
   button:hover {
     --_p: 100%;
