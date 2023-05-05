@@ -263,12 +263,3 @@
     height: 100%;
     overflow:hidden;
 }
-
-#gif {
-    animation: zoom-out 5s ease-out 6.5s forwards;
-  }
-  
-  @keyframes zoom-out {
-    100% {
-      transform: scale(30);
-    }

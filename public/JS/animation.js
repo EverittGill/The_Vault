@@ -1,18 +1,7 @@
-const gif = document.getElementById("gif");
-const duration = 7250; // duration in milliseconds (5 seconds)
+const video = document.getElementById("animation");
+const playButton = document.getElementById("play-button");
 
-// Initialize FreezeFrame on the GIF element
-var gifStart = new Freezeframe(gif, {
-  
-  responsive: true,
+playButton.addEventListener("click", () => {
+  video.play();
 });
 
-gifStart.start();
-
-
-// Hide the GIF after the duration has elapsed
-setTimeout(() => {
-  gif.style.display = "none";
-  gifStart.stop();
-  document.location.replace("/homepage");
-}, duration);
