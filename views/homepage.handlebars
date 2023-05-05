@@ -8,13 +8,25 @@
          <p>Use the Edit Password button to update your password</p>
         </div>
     </div>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  </div>
+  <!-- Button trigger modal -->
+  <button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
     Launch demo modal
   </button>
-  
+
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -24,34 +36,36 @@
         <div class="modal-body">
             <form>
         <div class="form-group">
-    <label for="exampleInputEmail1">Account Name</label>
+    <label for="account-name">Account Name</label>
     <input type="text" class="form-control" id="account-name" aria-describedby="emailHelp" placeholder="Enter account name">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Account URL</label>
-    <input type="url" class="form-control" id="account-url" aria-describedby="emailHelp" placeholder="url">
+    <label for="account-url">Account URL</label>
+    <input type="text" class="form-control" id="account-url" aria-describedby="emailHelp" placeholder="url">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
+    <label for="password">Password</label>
     <input type="password" class="form-control" id="password" placeholder="Password">
   </div>
      </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" id="add-account" class="btn btn-primary">Add Account</button>
+          <button type="button" id="add-account" class="btn btn-primary">Add Account</button>
         </div>
         </form>
       </div>
     </div>
   </div>
-<div class="account-list">
-{{#each accounts}} <br> <hr>
-<p class="homepage-account-name">{{account_name}}</p>
-<div class="homepage-password-render" >{{password}}</div>
-<button class="homepage-button" data-id="{{password}}">Show Password</button>
-<button class="homepage-button">Edit Password</button>
-{{/each}}
-</div>
+  <div class="account-list">
+    {{#each accounts}}
+      <br />
+      <hr />
+      <p class="homepage-account-name">{{account_name}}</p>
+      <div class="homepage-password-render">{{password}}</div>
+      <button class="homepage-button" data-id="{{password}}">Show Password</button>
+      <button class="homepage-button">Edit Password</button>
+    {{/each}}
+  </div>
 </div>
 
 <script src="./JS/homepage.js"></script>
