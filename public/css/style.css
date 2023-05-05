@@ -143,6 +143,8 @@
 
 
   #new-account-button {
+    font-size: 2em; /* make the button text 2x as big */
+    padding: 10px 20px; /* adjust the padding to give the button more space internally */
     pointer-events: auto; /* re-enable pointer events on the button so it is clickable */
   }
   
