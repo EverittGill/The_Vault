@@ -12,13 +12,13 @@ const ENCRYPTION_KEY = "MySuperSecretKey";
 // writing a function that accepts inputted information from the modal on the homepage and sends it to the database then displays it on the homepage
 const accountBtnHandler = async (event) => {
   event.preventDefault()
-  const accountName = document.querySelector('#account-name').value.trim();
-  const url = document.querySelector('#account-url').value.trim();
+  const account_name = document.querySelector('#account-name').value.trim();
+  const URL = document.querySelector('#account-url').value.trim();
   const password = document.querySelector('#password').value.trim();
-  if (accountName && password) {
+  if (account_name && password) {
     const response = await fetch('/api/accounts', {
       method: 'POST',
-      body: JSON.stringify({ accountName, url, password }),
+      body: JSON.stringify({ account_name, URL, password }),
       headers: { 'Content-Type': 'application/json' },
     });
     if (response.ok) {
@@ -68,9 +68,5 @@ document
   .addEventListener("click", revealBtnHandler);
 
 document
-  .querySelector(".modal-footer")
+  .querySelector(".add-account-btn")
   .addEventListener("click", accountBtnHandler);
-
-// document
-//   .querySelector(".add-account-btn")
-//   .addEventListener("click", addAccountBtnHandler);
