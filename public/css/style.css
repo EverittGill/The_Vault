@@ -94,6 +94,8 @@
 }
 
 
+
+
 .homepage-vault-title2 {
     font-size: 70px;
     font-family: 'Timesnow', sans-serif;
@@ -224,5 +226,7 @@
     }
   }
 
-  
+  .navbar {
+    background-color: var(--c) !important;
+  }
  
