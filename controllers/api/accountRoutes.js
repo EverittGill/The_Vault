@@ -25,10 +25,11 @@ router.post('/', async (req, res) => {
         
         const accountsData = await Accounts.create({
             account_name: req.body.account_name,
-            URL: req.body.URL,
+            URL: req.body.accountURL,
             password: req.body.password,
             user_id: req.session.user_id
         });
+        console.log(accountsData)
         res.status(200).json(accountsData);
     } catch (err) {
         res.status(400).json(err);
