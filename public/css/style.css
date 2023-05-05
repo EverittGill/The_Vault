@@ -4,12 +4,23 @@
 #vault_img {
     width: 1425px;
     height: 1000px;
-    /* opacity: 1; */
+    opacity: 100;
+    position: relative;
     left: 0px;
     top: 0px;
     padding-bottom: -70px;
     padding-left: -10px;
     /* position: absolute; */
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 37%; */
 }
 
 .vault-title {
@@ -55,8 +66,8 @@
 }
 
 #email-label {
-    margin-left: 20px;
-    padding-left: 32px;
+    margin-left: 0px;
+    padding-left: 22px;
 }
 
 #email-login {
@@ -68,7 +79,8 @@
 }
 
 #pwd-label {
-    margin-left: 30px;
+    /* margin-left: 40px; */
+    
 }
 
 #password-login {
@@ -79,18 +91,56 @@
     padding-left: 0px;
 }
 
-.btn-login {
-    text-align: center;
+#login-btn {
+    /* background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 80px;
+    padding-left: 75px; */
+    height: 40px;
+    width: 200px;
+    margin-left: 20px;
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 42%, 
+	#f6e27a 65%,
+	#f6f2c0 70%,
+	#f6e27a 75%,
+	#cb9b51 98%,
+	#462523 120%
+	);
+   color:transparent;
+   -webkit-background-clip:0;
+   color: black;
+    transition-duration: 500ms;
+    box-shadow: 0 2px 8px 0, 0 7px 30px 0;
 }
+/* .test-btn {
+    color: blue;
+} */
+
+#login-btn:hover {
+    background-color: black;
+    color: #464646;
+    transition-duration: 500ms;
+    box-shadow: 0 2px 2px 0, 0 2px 2px 0;
+}
+
 
 .signup_text {
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: center;
 }
 
 #copyright {
     text-align: center;
+    /* font-family: 'Timesnow', sans-serif; */
 }
+
 
 
 .homepage-vault-title2 {
@@ -197,6 +247,3 @@
       transform: scale(30);
     }
   }
-
-  
- 

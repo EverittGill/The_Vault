@@ -1,5 +1,5 @@
 <div class="container ">
-    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjFiNWU2ZDZmM2M0MTNhMjA3ZmUwNjJkZDVkOTk3NmJjYjRjODIyMiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/dCA4UzPBpqskwOPlE8/giphy.gif" alt="The vault opening for access" id="vault_img">
+    {{!-- <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjFiNWU2ZDZmM2M0MTNhMjA3ZmUwNjJkZDVkOTk3NmJjYjRjODIyMiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/dCA4UzPBpqskwOPlE8/giphy.gif" alt="The vault opening for access" id="vault_img"> --}}
     <div class="row mx-auto d-flex align-items-center min-vh-100">
         <div class="col-md-6 col-md-offset-3 mx-auto" id="log-sign">
             <br>
@@ -15,14 +15,39 @@
                     <input type="password" class="form-control" id="password-login" placeholder="Password">
                 </div>
                 <br>
-                <button type="submit" class="btn-light" id="login-btn">Login</button>
+                {{!-- <div class="test-btn"> --}}
+                <button type="submit" class="btn-light test-btn" style="margin-left: 20px" id="login-btn">Open Vault</button>
+                {{!-- </div> --}}
               </form>
             <br />
-            <p class="signup_text">First time here? Click <a href="signup">here</a> to sign up!</p>
+            {{!-- <p class="signup_text">First time here? Click <a href="signup">here</a> to sign up!</p> --}}
         </div>
     </div>
 </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="copyright has-background-black" id="copyright">&copy; The Vault 2023</footer>
-
-<script src="./JS/index.js"></script>
+<script src="./JS/renderAnimation.js"></script>
+<script src="./css/js/index.js"></script>
