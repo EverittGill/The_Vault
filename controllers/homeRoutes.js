@@ -21,8 +21,9 @@ router.get('/homepage', async (req, res) => {
       
     });
     const accounts = userData.map(user => user.get({ plain:true }));
+    console.log(accounts)
     res.render('homepage', { 
-      accounts 
+      accounts, user: accounts[0].user.name 
     });
   } catch (err) {
     console.error(err);

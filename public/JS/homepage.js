@@ -1,6 +1,6 @@
 const ENCRYPTION_KEY = "MySuperSecretKey";
 
-const accountBtnHandler = async (event) => {
+const addAccount = async (event) => {
   event.preventDefault();
   const account_name = document.querySelector("#account-name").value.trim();
   const accountURL = document.querySelector("#account-url").value.trim();
@@ -19,7 +19,7 @@ const accountBtnHandler = async (event) => {
   }
 };
 
-const revealBtnHandler = async (event) => {
+const revealPassword = async (event) => {
   const password = event.target.getAttribute("data-id");
   const shownPassword = event.target.previousElementSibling;
   const decryptedPassword = CryptoJS.AES.decrypt(password, ENCRYPTION_KEY);
@@ -27,10 +27,27 @@ const revealBtnHandler = async (event) => {
   return;
 };
 
-document
-  .querySelector(".account-list")
-  .addEventListener("click", revealBtnHandler);
+const logOut = async() => {
+  const response = await fetch("/logout", {
+    method: "POST",
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (response.ok) {
+    document.location.replace('/');
+  } else {
+    alert(response.statusText);
+  }
+};
 
 document
   .querySelector(".modal-footer")
-  .addEventListener("click", accountBtnHandler);
+  .addEventListener("click", addAccount);
+
+document
+  .querySelector(".account-list")
+  .addEventListener("mouseover", revealPassword);
+
+  document
+    .querySelector("#logout")
+    .addEventListener("click", logOut)
