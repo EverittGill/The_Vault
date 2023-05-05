@@ -1,7 +1,5 @@
-const video = document.getElementById("animation");
-const playButton = document.getElementById("play-button");
+const video = document.getElementById("vault_animation");
 
-playButton.addEventListener("click", () => {
-  video.play();
-});
-
+setTimeout(function() {
+  window.location.replace("/homepage");
+}, 10000); 
