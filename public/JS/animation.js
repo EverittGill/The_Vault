@@ -3,6 +3,7 @@ const duration = 7250; // duration in milliseconds (5 seconds)
 
 // Initialize FreezeFrame on the GIF element
 var gifStart = new Freezeframe(gif, {
+  
   responsive: true,
 });
 
