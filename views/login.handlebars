@@ -5,15 +5,21 @@
             <br>
             <h2 class="vault-title">Welcome to</h2>
             <h2 class="vault-title2">The Vault</h2>
+            <label for="exampleInputEmail" class="email-text">Email:</label>
+            <input type="email" class="email-text-input" placeholder="enter email">
+            <div>
+            <label for="exampleInputPassword1" class="password-text">Password:</label>
+            <input type="password" class="password-text-input" placeholder="enter password">
+            </div>
             <form class="login">
-                <div class="form-group">
-                    <label for="exampleInputEmail1" id="email-label">Email</label>
+                {{!-- <div class="form-group">
+                    <label for="exampleInputEmail1" class="email-text" id="email-label">Email</label>
                     <input type="email" class="form-control" id="email-login" placeholder="Email">
-                </div>
-                <div class="form-group" id="pwd-label">
+                </div> --}}
+                {{!-- <div class="form-group" id="pwd-label">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="password-login" placeholder="Password">
-                </div>
+                </div> --}}
                 <br>
                 {{!-- <div class="test-btn"> --}}
                 <button type="submit" class="btn-light test-btn" style="margin-left: 20px" id="login-btn">Open Vault</button>

@@ -61,8 +61,28 @@
 }
 
 #email-label {
-    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    /* margin-right: 200px; */
     padding-left: 22px;
+}
+
+.email-text {
+    /* text-align: center; */
+    margin-left: 140px;
+}
+
+.email-text-input {
+    width: 50%;
+}
+
+.password-text {
+    margin-left: 110px;
+}
+
+.password-text-input {
+    width: 50%;
+    margin-top: 10px;
 }
 
 #email-login {
