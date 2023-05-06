@@ -31,10 +31,6 @@ router.get('/homepage', withAuth, async (req, res) => {
   }
 });
 
-router.get('/animation', (req,res) => {
-  res.render('animation')
-});
-
 // posts a login request for an existing user.
 router.post('/login', async (req, res) => {
   try {
@@ -57,7 +53,8 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      res.redirect('/homepage');
+      console.log(req.session.user_id); // log the value of logged_in
+      res.redirect('/animation');
     });
     
 
@@ -66,16 +63,11 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// sends a logout request for the user
-router.post('/logout', (req, res) => {
-  if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
-  } else {
-    res.status(404).end();
-  }
+router.get('/animation', (req, res) => {
+  res.render('animation')
 });
+
+
 
 
 module.exports = router;

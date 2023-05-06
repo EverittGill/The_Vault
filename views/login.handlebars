@@ -5,67 +5,82 @@
             <br>
             <h2 class="vault-title">Welcome to</h2>
             <h2 class="vault-title2">The Vault</h2>
+            <label for="exampleInputEmail" class="email-text">Email:</label>
+            <input type="email" class="email-text-input" placeholder="enter email">
+            <div>
+            <label for="exampleInputPassword1" class="password-text">Password:</label>
+            <input type="password" class="password-text-input" placeholder="enter password">
+            </div>
             <form class="login">
-                <div class="form-group">
-                    <label for="exampleInputEmail1" id="email-label">Email</label>
+                {{!-- <div class="form-group">
+                    <label for="exampleInputEmail1" class="email-text" id="email-label">Email</label>
                     <input type="email" class="form-control" id="email-login" placeholder="Email">
-                </div>
-                <div class="form-group" id="pwd-label">
+                </div> --}}
+                {{!-- <div class="form-group" id="pwd-label">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="password-login" placeholder="Password">
-                </div>
+                </div> --}}
                 <br>
                 {{!-- <div class="test-btn"> --}}
                 <button type="submit" class="btn-light test-btn" style="margin-left: 20px" id="login-btn">Open Vault</button>
                 {{!-- </div> --}}
               </form>
+              <div>
+              <p class="signup_text">First time here? Click below to sign up!</p>
+        <button type="button" class="btn btn-primary" id="activate-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Activate My Vault!
+</button>
+</div>
             <br />
-            {{!-- <p class="signup_text">First time here? Click <a href="signup">here</a> to sign up!</p> --}}
+            {{!-- <p class="signup_text">First time here? Click <a href="signup">here</a> to sign up!</p>
+        <button type="button" class="btn btn-primary" id="activate-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Activate My Vault!
+</button> --}}
         </div>
     </div>
 </div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+{{!-- <button type="button" class="btn btn-primary" id="activate-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Activate My Vault!
+</button> --}}
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Activate My Vault!</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...<form>
+        <form>
         <div class="form-group">
-    <label for="exampleInputEmail1">Account Name</label>
-    <input type="text" class="form-control" id="account-name" aria-describedby="emailHelp" placeholder="Enter account name">
+    <label for="exampleInputEmail1">Username:</label>
+    <input type="text" class="form-control" id="account-name" aria-describedby="emailHelp" placeholder="Enter username name">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Account URL</label>
-    <input type="url" class="form-control" id="account-url" aria-describedby="emailHelp" placeholder="url">
+    <label for="exampleInputEmail1">Email:</label>
+    <input type="e-mail" class="form-control" id="e-mail" aria-describedby="emailHelp" placeholder="enter email address">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="password" placeholder="Password">
+    <label for="exampleInputPassword1">Password:</label>
+    <input type="password" class="form-control" id="password" placeholder="enter password">
   </div>
      </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" id="add-account" class="btn btn-primary">Add Account</button>
+          <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="add-account" class="add-acct-btn">Add Account</button>
+        {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
         </div>
         </form>
       </div>
-      <div class="modal-footer">
+      {{!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>
 
 <footer class="copyright has-background-black" id="copyright">&copy; The Vault 2023</footer>
-<script src="./JS/renderAnimation.js"></script>
 <script src="./JS/index.js"></script>
