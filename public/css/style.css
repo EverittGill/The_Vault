@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Share+Tech&display=swap');
 
 
+.container {
+    /* background-color:grey; */
+    /* background-color: blanchedalmond; */
+    /* background-color: ivory; */
+    background-color: lightgrey;
+    /* background-image: url("/images/geometry-texture-trendy-modern-repeat-600w-1363074059.jpeg"); */
+}
+
 #vault_img {
     width: 1425px;
     height: 1000px;
@@ -26,6 +34,7 @@
     margin-top: -20px;
     text-align: center;
     margin-bottom: 35px;
+    ;
 }
 
 .vault-title2 {
@@ -136,13 +145,20 @@
     /* align-items: center; */
 }
 
+.modalText {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+}
+
 #activate-btn {
     /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; */
     margin-left: 245px;
-    margin-bottom: 200px;
+    margin-bottom: -10;
     border-radius: 0;
     background-image: linear-gradient(
     to right,
@@ -223,9 +239,29 @@ add-acct-btn:hover {
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
 }
 
+.padlock-img {
+    width: 1200px;
+    height: 400px;
+    margin: 0;
+}
+
 #copyright {
     text-align: center;
-    /* font-family: 'Timesnow', sans-serif; */
+    color: black;
+    /* color: lightgray; */
+    font-weight: bolder;
+    /* background-image: linear-gradient(
+    to right,
+    #462523 0,
+        #cb9b51 42%, 
+    #f6e27a 65%,
+    #f6f2c0 70%,
+    #f6e27a 75%,
+    #cb9b51 98%,
+    #462523 120%
+    );
+   color:transparent;
+   -webkit-background-clip:text; */
 }
 
 
