@@ -7,6 +7,7 @@
     /* background-color: blanchedalmond; */
     /* background-color: ivory; */
     background-color: lightgrey;
+    background-image: url("/images/geometry-texture-trendy-modern-repeat-600w-1363074059.jpeg");
 }
 
 #vault_img {
@@ -142,6 +143,13 @@
     /* margin-bottom: 50px; */
     margin-top: 50px;
     /* align-items: center; */
+}
+
+.modalText {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* align-items: flex-start; */
 }
 
 #activate-btn {
