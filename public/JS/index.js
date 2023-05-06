@@ -31,7 +31,7 @@ const loginFormHandler = async (event) => {
   })
 
   if (response.ok) {
-    document.location.replace('/homepage')
+    document.location.replace('/animation')
   } else {
     alert(response.statusText)
   }

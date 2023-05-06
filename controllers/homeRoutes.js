@@ -22,16 +22,12 @@ router.get('/homepage', async (req, res) => {
     });
     const accounts = userData.map(user => user.get({ plain:true }));
     res.render('homepage', { 
-      accounts 
+      accounts
     });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Internal server error' });
   }
-});
-
-router.get('/animation', (req,res) => {
-  res.render('animation')
 });
 
 // posts a login request for an existing user.
@@ -57,7 +53,7 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       console.log(req.session.user_id); // log the value of logged_in
-      res.redirect('/homepage');
+      res.redirect('/animation');
     });
     
 
@@ -66,16 +62,11 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// sends a logout request for the user
-router.post('/logout', (req, res) => {
-  if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
-  } else {
-    res.status(404).end();
-  }
+router.get('/animation', (req, res) => {
+  res.render('animation')
 });
+
+
 
 
 module.exports = router;

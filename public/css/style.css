@@ -262,26 +262,94 @@ add-acct-btn:hover {
     font-size: 40px;
 }
 
+/* .account-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* Current CSS */
+.account-list-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.homepage-account-name {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0; /* reset margin */
+  padding: 0; /* reset padding */
+}
+
+.homepage-password-render {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0; /* reset margin */
+  padding: 0; /* reset padding */
+}
+
+.show-tool, .edit-tool {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0; /* reset margin */
+  padding: 0; /* reset padding */
+}
+
+/* Media query for iPhone 12 Pro */
+@media screen and (max-width: 390px) {
+  .account-list-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .homepage-account-name {
+    text-align: center;
+  }
+
+  .homepage-password-render {
+    text-align: center;
+  }
+
+  .show-tool, .edit-tool {
+    margin: 0 10px; /* Add appropriate margins */
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .button-container {
     display: flex;
     justify-content: center;
   }
   
   
-  .common-button-style {
-    background-color: #229091;
-    border-color: #229091;
+  .edit-tool {
+    background-color: transparent;
+    border: none;
+    padding: 0;
     pointer-events: auto;
-    border-radius: 10px;
   }
   
+.show-tool {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    pointer-events: auto;
+  }
 
 
 
   #new-account-button {
-    font-size: 2em; /* make the button text 2x as big */
-    padding: 10px 20px; /* adjust the padding to give the button more space internally */
-    pointer-events: auto; /* re-enable pointer events on the button so it is clickable */
+    font-size: 2em; 
+    padding: 10px 20px; 
+    border-radius: 25px;
+    pointer-events: auto; 
   }
   
 
@@ -312,9 +380,10 @@ add-acct-btn:hover {
     display: inline-block;
 }
 
-/* .homepage-button {
+.homepage-button {
     margin-left: 3%;
-} */
+    /* border: none; */
+}
 
 
 .homepage-button{
@@ -343,18 +412,35 @@ add-acct-btn:hover {
     color: #fff;
   }
   
-#animation-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow:hidden;
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
-#gif {
-    animation: zoom-out 5s ease-out 6.5s forwards;
-  }
-  
-  @keyframes zoom-out {
-    100% {
-      transform: scale(30);
+
+
+
+  @media (max-width: 390px) {
+    .tutorial {
+      font-size: 14px;
     }
+    .homepage-vault-title2 {
+      font-size: 24px;
+    }
+    .homepage-account-name {
+      font-size: 18px;
+    }
+    .homepage-button {
+      font-size: 14px;
+      margin: 2vh;
+    }
+    .modal-title {
+      font-size: 18px;
+    }
+    .modal-footer .btn {
+      font-size: 14px;
+    }
+  }
+
+
