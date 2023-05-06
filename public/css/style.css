@@ -170,6 +170,58 @@
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
 }
 
+.close-btn {
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+            #cb9b51 42%, 
+        #f6e27a 65%,
+        #f6f2c0 70%,
+        #f6e27a 75%,
+        #cb9b51 98%,
+        #462523 120%
+        );
+       color:transparent;
+       -webkit-background-clip:0;
+       color: black;
+       border: black;
+       width: 120px;
+       height: 40px;
+       border-radius: 5px;
+       /* transition-duration: 500ms;
+        box-shadow: 0 2px 8px 0, 0 7px 10px 0; */
+}
+
+.add-acct-btn {
+    /* color: black; */
+    background-image: linear-gradient(
+    to right,
+    #462523 0,
+        #cb9b51 42%, 
+    #f6e27a 65%,
+    #f6f2c0 70%,
+    #f6e27a 75%,
+    #cb9b51 98%,
+    #462523 120%
+    );
+   color:transparent;
+   -webkit-background-clip:0;
+   color: black;
+   border: black;
+   width: 120px;
+   height: 40px;
+   border-radius: 5px;
+   transition-duration: 500ms;
+    box-shadow: 0 2px 8px 0, 0 7px 10px 0;
+}
+
+add-acct-btn:hover {
+    background-color: black;
+    color: #464646;
+    /* color: white; */
+    transition-duration: 500ms;
+    box-shadow: 0 2px 2px 0, 0 2px 2px 0;
+}
 
 #copyright {
     text-align: center;
