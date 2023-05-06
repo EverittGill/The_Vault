@@ -116,9 +116,12 @@
 }
 
 #activate-btn {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    align-items: center; */
+    margin-left: 240px;
+    border-radius: 0;
     background-image: linear-gradient(
     to right,
     #462523 0,
