@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Share+Tech&display=swap');
 
 
+.container {
+    /* background-color:grey; */
+    /* background-color: blanchedalmond; */
+    /* background-color: ivory; */
+    background-color: lightgrey;
+}
+
 #vault_img {
     width: 1425px;
     height: 1000px;
@@ -26,6 +33,7 @@
     margin-top: -20px;
     text-align: center;
     margin-bottom: 35px;
+    ;
 }
 
 .vault-title2 {
@@ -142,7 +150,7 @@
     justify-content: center;
     align-items: center; */
     margin-left: 245px;
-    margin-bottom: 200px;
+    margin-bottom: -10;
     border-radius: 0;
     background-image: linear-gradient(
     to right,
@@ -221,6 +229,12 @@ add-acct-btn:hover {
     /* color: white; */
     transition-duration: 500ms;
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
+}
+
+.padlock-img {
+    width: 1200px;
+    height: 400px;
+    margin: 0;
 }
 
 #copyright {
