@@ -291,7 +291,7 @@ add-acct-btn:hover {
   padding: 0; /* reset padding */
 }
 
-.show-tool, .edit-tool {
+.show-tool, .delete-tool {
   flex-grow: 1;
   text-align: center;
   margin: 0; /* reset margin */
@@ -313,7 +313,7 @@ add-acct-btn:hover {
     text-align: center;
   }
 
-  .show-tool, .edit-tool {
+  .show-tool, .delete-tool {
     margin: 0 10px; /* Add appropriate margins */
   }
 
@@ -329,7 +329,7 @@ add-acct-btn:hover {
   }
   
   
-  .edit-tool {
+  .delete-tool {
     background-color: transparent;
     border: none;
     padding: 0;
