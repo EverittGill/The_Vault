@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { User, Accounts } = require('../models');
+const withAuth = require("../utils/auth")
 
 router.get("/", (req, res) => {
     // If the user is already logged in, redirect the request to another route
@@ -13,7 +14,7 @@ router.get("/", (req, res) => {
   });
 
 // Route to render the home page
-router.get('/homepage', async (req, res) => {
+router.get('/homepage', withAuth, async (req, res) => {
   try {
     const userData = await Accounts.findAll({
       where: {user_id: req.session.user_id},
@@ -22,7 +23,7 @@ router.get('/homepage', async (req, res) => {
     });
     const accounts = userData.map(user => user.get({ plain:true }));
     res.render('homepage', { 
-      accounts
+      accounts, user: accounts[0].user.name 
     });
   } catch (err) {
     console.error(err);
@@ -48,7 +49,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password, please try again' });
       return;
     }
-
+    console.log("we made it this far")
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
