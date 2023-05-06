@@ -145,6 +145,11 @@
     /* align-items: center; */
 }
 
+p {
+    font-size: 20px;
+    font-family: 'Share Tech', sans-serif;
+}
+
 .modalText {
     display: flex;
     flex-direction: row;
@@ -153,10 +158,6 @@
 }
 
 #activate-btn {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
     margin-left: 245px;
     margin-bottom: -10;
     border-radius: 0;
@@ -204,8 +205,8 @@
        width: 120px;
        height: 40px;
        border-radius: 5px;
-       /* transition-duration: 500ms;
-        box-shadow: 0 2px 8px 0, 0 7px 10px 0; */
+       transition-duration: 500ms;
+        box-shadow: 0 2px 8px 0, 0 7px 10px 0;
 }
 
 .add-acct-btn {
@@ -239,29 +240,16 @@ add-acct-btn:hover {
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
 }
 
-.padlock-img {
+/* .padlock-img {
     width: 1200px;
     height: 400px;
     margin: 0;
-}
+} */
 
 #copyright {
     text-align: center;
     color: black;
-    /* color: lightgray; */
     font-weight: bolder;
-    /* background-image: linear-gradient(
-    to right,
-    #462523 0,
-        #cb9b51 42%, 
-    #f6e27a 65%,
-    #f6f2c0 70%,
-    #f6e27a 75%,
-    #cb9b51 98%,
-    #462523 120%
-    );
-   color:transparent;
-   -webkit-background-clip:text; */
 }
 
 
