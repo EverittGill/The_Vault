@@ -109,7 +109,7 @@
     padding-left: 0px;
 }
 
-#login-btn {
+#login-btn, #new-account-button {
     height: 40px;
     width: 200px;
     margin-left: 20px;
@@ -311,13 +311,29 @@ add-acct-btn:hover {
   align-items: center;
   width: 70%;
   margin: 0 auto;
+  text-decoration: none;
 }
+
+
+.account-name-link {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0; /* reset margin */
+  padding: 0; /* reset padding */
+  text-decoration: none;
+  color: black;
+}
+
+
+
 
 .homepage-account-name {
   flex-grow: 1;
   text-align: center;
   margin: 0; /* reset margin */
   padding: 0; /* reset padding */
+  text-decoration: none;
+  color: black;
 }
 
 .homepage-password-render {
@@ -325,6 +341,7 @@ add-acct-btn:hover {
   text-align: center;
   margin: 0; /* reset margin */
   padding: 0; /* reset padding */
+  color: black;
 }
 
 .show-tool, .delete-tool {
@@ -380,13 +397,13 @@ add-acct-btn:hover {
   }
 
 
-
-  #new-account-button {
+/* this is the button for the add account button on line 27 of the homepage.handlebars */
+  /* #new-account-button {
     font-size: 2em; 
     padding: 10px 20px; 
     border-radius: 25px;
     pointer-events: auto; 
-  }
+  } */
   
 
 .homepage-intro {   

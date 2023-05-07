@@ -16,6 +16,7 @@
         <div class="tutorial">
         <p>Logged in as {{user}}</p>
         <p>Here's all your accounts</p>
+        <p>Click on the account name to visit that website</p>
          <p>Click the button next to each of them to reveal the password you saved</p>
          <p>Use the Edit Password button to update your password</p>
         </div>
@@ -23,7 +24,7 @@
 
         <!-- Button trigger modal -->
   <div class="button-container">
-    <button type="button" class="common-button-style homepage-button" id="new-account-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="" id="new-account-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Add New Account
     </button>
   </div>
@@ -71,13 +72,19 @@
 {{#each accounts}}
   <br> <hr> <br>
     <div class="account-list-item">
-  <p class="homepage-account-name">{{account_name}}</p>
+
+      <div class="account-name-link">
+  <a href="{{URL}}" class="homepage-account-name">{{account_name}}
+      <i class="fa-solid fa-link" style="color: #000205;"></i></a>
+  </div>
+
+
     <div class="homepage-password-render" data-password="{{password}}" data-shown="false">••••••••</div>
   <button class="show-tool" data-id="{{password}}">
       <i class="fa-solid fa-eye fa-2xl" style="color: #329ea1;"></i>  
   </button>
   <button class="delete-tool" data-account_id="{{id}}">
-      <i class="fa-regular fa-trash-can fa-2xl" style="color: #32a897;"></i>
+      <i class="fa-regular fa-trash-can fa-2xl" style="color:#db7776;"></i>
   </button>
     </div>
 {{/each}}
