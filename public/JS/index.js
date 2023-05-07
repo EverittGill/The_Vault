@@ -43,6 +43,6 @@ document
   .addEventListener('submit', loginFormHandler);
 
 document
-  .querySelector('.add-acct-btn')
-  .addEventListener('submit', signupFormHandler);
+  .querySelector('#account-signup')
+  .addEventListener('click', signupFormHandler);
   
