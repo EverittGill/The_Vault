@@ -4,9 +4,13 @@
 
 .container {
     background-color: lightgrey;
+
     /* background-image: url("/images/geometry-texture-trendy-modern-repeat-600w-1363074059.jpeg"); */
 }
 
+#log-sign {
+  background-color: lightgrey;
+}
 #vault_img {
     width: 1425px;
     height: 1000px;
@@ -462,6 +466,10 @@ video {
     .modal-footer .btn {
       font-size: 14px;
     }
+  }
+
+  footer {
+    background-color: lightgrey;
   }
 
   #vault_animation {
