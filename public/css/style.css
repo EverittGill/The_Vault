@@ -3,8 +3,10 @@
 
 
 .container {
-    background-color: lightgrey;
-
+    background-image: 100vh;
+    height: 100vh;
+    /* background-color: lightgrey;
+    background-color: tan; */
     /* background-image: url("/images/geometry-texture-trendy-modern-repeat-600w-1363074059.jpeg"); */
 }
 
