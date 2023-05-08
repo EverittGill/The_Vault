@@ -2,4 +2,4 @@ const video = document.getElementById("vault_animation");
 
 setTimeout(function() {
   window.location.replace("/homepage");
-}, 15000); 
+}, 8000); 

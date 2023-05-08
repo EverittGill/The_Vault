@@ -3,9 +3,14 @@
 
 
 .container {
+
     background-color: lightgrey;
+
 }
 
+#log-sign {
+  background-color: lightgrey;
+}
 #vault_img {
     width: 1425px;
     height: 1000px;
@@ -145,6 +150,11 @@
     margin-top: 50px;
 }
 
+p {
+    font-size: 20px;
+    font-family: 'Share Tech', sans-serif;
+}
+
 .modalText {
     display: flex;
     flex-direction: row;
@@ -154,6 +164,9 @@
 
 #activate-btn {
     margin-left: 245px;
+
+  
+
     margin-bottom: -10;
     border-radius: 0;
     background-image: linear-gradient(
@@ -200,7 +213,12 @@
        width: 120px;
        height: 40px;
        border-radius: 5px;
+
     
+
+       transition-duration: 500ms;
+        box-shadow: 0 2px 8px 0, 0 7px 10px 0;
+
 }
 
 .add-acct-btn {
@@ -233,11 +251,11 @@ add-acct-btn:hover {
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
 }
 
-.padlock-img {
+/* .padlock-img {
     width: 1200px;
     height: 400px;
     margin: 0;
-}
+} */
 
 #copyright {
     text-align: center;
@@ -445,6 +463,10 @@ video {
     .modal-footer .btn {
       font-size: 14px;
     }
+  }
+
+  footer {
+    background-color: lightgrey;
   }
 
   #vault_animation {

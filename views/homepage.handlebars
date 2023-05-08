@@ -73,20 +73,19 @@
     <div class="account-list-item">
       <div class="account-name-link">
   <a href="{{URL}}" class="homepage-account-name">{{account_name}}
-     {{#if URL }} 
+    {{#if URL }} 
         <i class="fa-solid fa-link fa-2xs link-icon" style="color: #000000;"></i>
      {{/if}}
       </a>
-
   </div>
-
-
     <div class="homepage-password-render" data-password="{{password}}" data-shown="false">••••••••</div>
   <button class="show-tool" data-id="{{password}}">
       <i class="fa-solid fa-eye fa-2xl" style="color: #329ea1;"></i>  
   </button>
   <button class="delete-tool" data-account_id="{{id}}">
+    {{#if URL}}
       <i class="fa-regular fa-trash-can fa-2xl" style="color:#db7776;"></i>
+    {{/if}}
   </button>
     </div>
 {{/each}}
