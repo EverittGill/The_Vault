@@ -109,6 +109,14 @@
     padding-left: 0px;
 }
 
+
+.new-account-button{
+   position: relative;
+   bottom: 9vh;
+}
+
+
+
 #login-btn, #new-account-button {
     height: 40px;
     width: 200px;
@@ -140,9 +148,7 @@
 .signup_text {
     text-align: center;
     margin-left: 10px;
-    /* margin-bottom: 50px; */
     margin-top: 50px;
-    /* align-items: center; */
 }
 
 .modalText {
@@ -153,10 +159,6 @@
 }
 
 #activate-btn {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
     margin-left: 245px;
     margin-bottom: -10;
     border-radius: 0;
@@ -204,8 +206,7 @@
        width: 120px;
        height: 40px;
        border-radius: 5px;
-       /* transition-duration: 500ms;
-        box-shadow: 0 2px 8px 0, 0 7px 10px 0; */
+    
 }
 
 .add-acct-btn {
@@ -271,8 +272,6 @@ add-acct-btn:hover {
     font-family: 'Timesnow', sans-serif;
     text-align: center;
     margin-bottom: 30px;
-    /* position: absolute; */
-   /* transform: translate(-50%,-50%); */
    top: 50%;
    left: 10%;
    font-family: 'Times New Roman',serif;
@@ -298,13 +297,7 @@ add-acct-btn:hover {
     font-size: 40px;
 }
 
-/* .account-list-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
-/* Current CSS */
 .account-list-item {
   display: flex;
   justify-content: space-evenly;
@@ -374,6 +367,10 @@ add-acct-btn:hover {
     display: flex;
     justify-content: center;
   }
+  #new-account-button{
+    position: relative;
+    top: 2vh
+  }
 }
 
 .button-container {
@@ -396,15 +393,6 @@ add-acct-btn:hover {
     pointer-events: auto;
   }
 
-
-/* this is the button for the add account button on line 27 of the homepage.handlebars */
-  /* #new-account-button {
-    font-size: 2em; 
-    padding: 10px 20px; 
-    border-radius: 25px;
-    pointer-events: auto; 
-  } */
-  
 
 .homepage-intro {   
     margin: 3%;
@@ -435,26 +423,9 @@ add-acct-btn:hover {
 
 .homepage-button {
     margin-left: 3%;
-    /* border: none; */
 }
 
 
-.homepage-button{
-        --c: #229091; /* the color */
-      
-        box-shadow: 0 0 0 .1em inset var(--c);
-        --_g: linear-gradient(var(--c) 0 0) no-repeat;
-        background:
-          var(--_g) calc(var(--_p, 0%) - 100%) 0%,
-          var(--_g) calc(200% - var(--_p, 0%)) 0%,
-          var(--_g) calc(var(--_p, 0%) - 100%) 100%,
-          var(--_g) calc(200% - var(--_p, 0%)) 100%;
-        background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
-        outline-offset: .1em;
-        transition: background-size .4s, background-position 0s .4s;
-        float: right;
-        margin-left: 3%;   
-  }
   button:hover {
     --_p: 100%;
     transition: background-position .4s, background-size 0s;
