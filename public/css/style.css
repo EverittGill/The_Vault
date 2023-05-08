@@ -3,11 +3,7 @@
 
 
 .container {
-    /* background-color:grey; */
-    /* background-color: blanchedalmond; */
-    /* background-color: ivory; */
     background-color: lightgrey;
-    /* background-image: url("/images/geometry-texture-trendy-modern-repeat-600w-1363074059.jpeg"); */
 }
 
 #vault_img {
@@ -72,12 +68,10 @@
 #email-label {
     display: flex;
     flex-direction: row;
-    /* margin-right: 200px; */
     padding-left: 22px;
 }
 
 .email-text {
-    /* text-align: center; */
     margin-left: 140px;
 }
 
@@ -210,7 +204,7 @@
 }
 
 .add-acct-btn {
-    /* color: black; */
+  
     background-image: linear-gradient(
     to right,
     #462523 0,
@@ -235,7 +229,6 @@
 add-acct-btn:hover {
     background-color: black;
     color: #464646;
-    /* color: white; */
     transition-duration: 500ms;
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
 }
@@ -249,20 +242,7 @@ add-acct-btn:hover {
 #copyright {
     text-align: center;
     color: black;
-    /* color: lightgray; */
     font-weight: bolder;
-    /* background-image: linear-gradient(
-    to right,
-    #462523 0,
-        #cb9b51 42%, 
-    #f6e27a 65%,
-    #f6f2c0 70%,
-    #f6e27a 75%,
-    #cb9b51 98%,
-    #462523 120%
-    );
-   color:transparent;
-   -webkit-background-clip:text; */
 }
 
 
@@ -311,8 +291,8 @@ add-acct-btn:hover {
 .account-name-link {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0;
+  padding: 0; 
   text-decoration: none;
   color: black;
 }
@@ -323,8 +303,8 @@ add-acct-btn:hover {
 .homepage-account-name {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0; 
+  padding: 0; 
   text-decoration: none;
   color: black;
 }
@@ -332,16 +312,16 @@ add-acct-btn:hover {
 .homepage-password-render {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0; 
+  padding: 0; 
   color: black;
 }
 
 .show-tool, .delete-tool {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0; 
+  padding: 0; 
 }
 
 /* Media query for iPhone 12 Pro */
@@ -360,7 +340,7 @@ add-acct-btn:hover {
   }
 
   .show-tool, .delete-tool {
-    margin: 0 10px; /* Add appropriate margins */
+    margin: 0 10px; 
   }
 
   .buttons-container {
