@@ -78,19 +78,26 @@
 
 .email-text {
     margin-left: 140px;
+    /* margin-right: 200px; */
+    /* padding-left: 22px; */
+}
+
+.email-text {
+    /* text-align: center; */
+    /* margin-left: 140px; */
 }
 
 .email-text-input {
     width: 50%;
 }
 
-.password-text {
+/* .password-text {
     margin-left: 110px;
-}
+} */
 
 .password-text-input {
-    width: 50%;
-    margin-top: 10px;
+    width: 51.5%;
+    margin-right: 1.7rem;
 }
 
 #email-login {
@@ -478,3 +485,8 @@ video {
     object-fit: cover;
   }
   
+  @media only screen and (max-width: 767px) {
+    #log-sign {
+      text-align: center;
+    }
+  }
