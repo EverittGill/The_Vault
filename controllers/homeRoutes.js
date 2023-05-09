@@ -21,13 +21,18 @@ router.get("/homepage", withAuth, async (req, res) => {
       include: [{ model: User }],
     });
     const accounts = userData.map((user) => user.get({ plain: true }));
+    const userName = await User.findByPk(req.session.user_id)
+    const user = userName.get({plain: true})
+    console.log(user)
     if (accounts.length > 0) {
       res.render("homepage", {
         accounts,
-        user: accounts[0].user.name,
+        user
       });
     } else {
-      res.render("homepage");
+      res.render("homepage", {
+        user
+      });
     }
   } catch (err) {
     console.error(err);
