@@ -1,9 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/timesnow');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Share+Tech&display=swap');
+@import url('https://fonts.cdnfonts.com/css/derivia');
+@import url('https://fonts.cdnfonts.com/css/tenderness-5');
+@import url('https://fonts.cdnfonts.com/css/windsong');
+@import url('https://fonts.cdnfonts.com/css/martel-2');
 
 
 #log-sign {
   background-color: lightgrey;
+  height: 600px;
+  width: 725px;
 }
 #vault_img {
     width: 1425px;
@@ -24,18 +30,17 @@
 }
 
 .vault-title {
-    font-size: 60px;
-    font-family: 'Timesnow', sans-serif;
-    margin-top: -20px;
     text-align: center;
     margin-bottom: 35px;
-    ;
+    font-size: 100px;
+    font-family: 'windsong';
+    margin-top: 10px;
 }
 
 .vault-title2 {
     font-size: 70px;
     font-family: 'Timesnow', sans-serif;
-    margin-top: -50px;
+    margin-top: -90px;
     text-align: center;
     margin-bottom: 20px;
    top: 50%;
@@ -145,6 +150,9 @@
 }
 
 .signup_text {
+    font-family: 'windsong';
+    font-size: 35px;
+    font-weight: bold;
     text-align: center;
     margin-left: 10px;
     margin-top: 50px;
