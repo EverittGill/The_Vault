@@ -24,9 +24,7 @@ router.post('/', async (req, res) => {
     try {
         
         const accountsData = await Accounts.create({
-            account_name: req.body.account_name,
-            URL: req.body.accountURL,
-            password: req.body.password,
+           ...req.body,
             user_id: req.session.user_id
         });
         res.status(200).json(accountsData);

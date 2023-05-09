@@ -20,10 +20,11 @@ router.get('/homepage', withAuth, async (req, res) => {
       where: {user_id: req.session.user_id},
       include: [{ model: User }],
       
+      
     });
     const accounts = userData.map(user => user.get({ plain:true }));
     res.render('homepage', { 
-      accounts, user: accounts[0].user.name 
+      accounts, /* user: accounts[0].user.name */ 
     });
   } catch (err) {
     console.error(err);
@@ -53,7 +54,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      console.log(req.session.user_id); // log the value of logged_in
+      console.log(req.session.user_id); 
       res.redirect('/animation');
     });
     

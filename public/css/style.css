@@ -5,11 +5,14 @@
 @import url('https://fonts.cdnfonts.com/css/windsong');
 @import url('https://fonts.cdnfonts.com/css/martel-2');
 
+<<<<<<< HEAD
 .container {
     /* background-color: lightgrey;
     background-color: tan; */
 }
 
+=======
+>>>>>>> aafd40124e94bf3a0fc894697def01092e0527b7
 #log-sign {
   background-color: lightgrey;
   height: 600px;
@@ -80,26 +83,34 @@
 #email-label {
     display: flex;
     flex-direction: row;
-    /* margin-right: 200px; */
     padding-left: 22px;
 }
 
 .email-text {
+    /* margin-right: 200px; */
+    /* padding-left: 22px; */
+}
+
+.email-text {
     /* text-align: center; */
+<<<<<<< HEAD
     margin-left: 195px;
+=======
+    /* margin-left: 140px; */
+>>>>>>> aafd40124e94bf3a0fc894697def01092e0527b7
 }
 
 .email-text-input {
     width: 50%;
 }
 
-.password-text {
+/* .password-text {
     margin-left: 110px;
-}
+} */
 
 .password-text-input {
-    width: 50%;
-    margin-top: 10px;
+    width: 51.5%;
+    margin-right: 1.7rem;
 }
 
 #email-login {
@@ -116,6 +127,14 @@
     margin-left: 0px;
     padding-left: 0px;
 }
+
+
+.new-account-button{
+   position: relative;
+   bottom: 9vh;
+}
+
+
 
 #login-btn, #new-account-button {
     height: 40px;
@@ -152,7 +171,10 @@
     text-align: center;
     margin-left: 10px;
     margin-top: 50px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> aafd40124e94bf3a0fc894697def01092e0527b7
 }
 
 p {
@@ -168,7 +190,10 @@ p {
 }
 
 #activate-btn {
+<<<<<<< HEAD
     margin-left: 10px;
+=======
+>>>>>>> aafd40124e94bf3a0fc894697def01092e0527b7
     margin-bottom: -10;
     border-radius: 0;
     background-image: linear-gradient(
@@ -215,12 +240,16 @@ p {
        width: 120px;
        height: 40px;
        border-radius: 5px;
+
+    
+
        transition-duration: 500ms;
         box-shadow: 0 2px 8px 0, 0 7px 10px 0;
+
 }
 
 .add-acct-btn {
-    /* color: black; */
+  
     background-image: linear-gradient(
     to right,
     #462523 0,
@@ -245,7 +274,6 @@ p {
 add-acct-btn:hover {
     background-color: black;
     color: #464646;
-    /* color: white; */
     transition-duration: 500ms;
     box-shadow: 0 2px 2px 0, 0 2px 2px 0;
 }
@@ -269,8 +297,6 @@ add-acct-btn:hover {
     font-family: 'Timesnow', sans-serif;
     text-align: center;
     margin-bottom: 30px;
-    /* position: absolute; */
-   /* transform: translate(-50%,-50%); */
    top: 50%;
    left: 10%;
    font-family: 'Times New Roman',serif;
@@ -296,13 +322,7 @@ add-acct-btn:hover {
     font-size: 40px;
 }
 
-/* .account-list-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
-/* Current CSS */
 .account-list-item {
   display: flex;
   justify-content: space-evenly;
@@ -316,8 +336,8 @@ add-acct-btn:hover {
 .account-name-link {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0;
+  padding: 0; 
   text-decoration: none;
   color: black;
 }
@@ -328,8 +348,8 @@ add-acct-btn:hover {
 .homepage-account-name {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0; 
+  padding: 0; 
   text-decoration: none;
   color: black;
 }
@@ -337,16 +357,16 @@ add-acct-btn:hover {
 .homepage-password-render {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0; 
+  padding: 0; 
   color: black;
 }
 
 .show-tool, .delete-tool {
   flex-grow: 1;
   text-align: center;
-  margin: 0; /* reset margin */
-  padding: 0; /* reset padding */
+  margin: 0; 
+  padding: 0; 
 }
 
 /* Media query for iPhone 12 Pro */
@@ -365,12 +385,16 @@ add-acct-btn:hover {
   }
 
   .show-tool, .delete-tool {
-    margin: 0 10px; /* Add appropriate margins */
+    margin: 0 10px; 
   }
 
   .buttons-container {
     display: flex;
     justify-content: center;
+  }
+  #new-account-button{
+    position: relative;
+    top: 2vh
   }
 }
 
@@ -394,15 +418,6 @@ add-acct-btn:hover {
     pointer-events: auto;
   }
 
-
-/* this is the button for the add account button on line 27 of the homepage.handlebars */
-  /* #new-account-button {
-    font-size: 2em; 
-    padding: 10px 20px; 
-    border-radius: 25px;
-    pointer-events: auto; 
-  } */
-  
 
 .homepage-intro {   
     margin: 3%;
@@ -433,26 +448,9 @@ add-acct-btn:hover {
 
 .homepage-button {
     margin-left: 3%;
-    /* border: none; */
 }
 
 
-.homepage-button{
-        --c: #229091; /* the color */
-      
-        box-shadow: 0 0 0 .1em inset var(--c);
-        --_g: linear-gradient(var(--c) 0 0) no-repeat;
-        background:
-          var(--_g) calc(var(--_p, 0%) - 100%) 0%,
-          var(--_g) calc(200% - var(--_p, 0%)) 0%,
-          var(--_g) calc(var(--_p, 0%) - 100%) 100%,
-          var(--_g) calc(200% - var(--_p, 0%)) 100%;
-        background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
-        outline-offset: .1em;
-        transition: background-size .4s, background-position 0s .4s;
-        float: right;
-        margin-left: 3%;   
-  }
   button:hover {
     --_p: 100%;
     transition: background-position .4s, background-size 0s;
@@ -507,3 +505,8 @@ video {
     object-fit: cover;
   }
   
+  @media only screen and (max-width: 767px) {
+    #log-sign {
+      text-align: center;
+    }
+  }
