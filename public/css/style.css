@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Share+Tech&display=swap');
 
 
-.container {
-
-    background-color: lightgrey;
-
-}
-
 #log-sign {
   background-color: lightgrey;
 }
@@ -77,7 +71,6 @@
 }
 
 .email-text {
-    margin-left: 140px;
     /* margin-right: 200px; */
     /* padding-left: 22px; */
 }
@@ -170,10 +163,6 @@ p {
 }
 
 #activate-btn {
-    margin-left: 245px;
-
-  
-
     margin-bottom: -10;
     border-radius: 0;
     background-image: linear-gradient(
