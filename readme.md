@@ -19,36 +19,32 @@ The Vault is a Full Stack web application that allows the user to save and store
 
 ## Technologies:
 
-- Javascript
-- npm i
-- Node.js
-- Express.js
-- npm inquirer
-- MySQL
-- MySQL Workbench
-- Insomnia
+NPM: https://www.npmjs.com/ <br>
+MySQL: https://www.mysql.com/ <br>
+Handlebars: https://handlebarsjs.com/ <br>
+BootStrap: https://getbootstrap.com/
 
 ## Installation:
 
-The user should clone the repository from GitHub. This application requires Node.js, Express.js and Sequelize. To connect to the database, run mysql -u root -p and enter password from .env file. Once the password is entered, source the schema.sql. To see the file run npm run seed. Finally to connect to the server, run npm start. 
+The user should clone the repository from GitHub. To install dependecies run 'npm i' in the terminal. To connect to the database, run 'mysql -u root -p' and enter password from .env file. Once the password is entered, source the schema by typing 'SOURCE schema.sql'. To see the file run npm run seed. Finally to connect to the server, run npm start. 
 
 ## Usage:
 
-- [Click here to view the deployed application on Heroku:]() 
+- [Click here to view the deployed application on Heroku:](https://thegoldenvault.herokuapp.com/) 
 
 - Application Screenshot:
 
-- ![Application Screenshot]()
+- ![Application Screenshot](/assets/website_screenshot.png)
 
 - [Repository URL:](https://github.com/JacobRyanWillis/The_Vault)
 
 ## Credits:
 
-- Jacob Willis: Backend Javascript & Front-end animation
-- Raiya Young: HTML and CSS
-- Bruno Rosa: Front-end Javascript
-- Everitt Gill: Front-end and Backend Javascript, HTML and CSS
-- Constan Fernando
+Jacob Willis: Backend Javascript & Front-end animation <br>
+Raiya Young: HTML and CSS <br>
+Bruno Rosa: Front-end Javascript <br>
+Everitt Gill: Front-end and Backend Javascript, HTML and CSS <br>
+<pre> Constan Fernando </pre>
 
 
 ## License:
@@ -57,10 +53,12 @@ MIT License
 This project is licensed under MIT License. Click [here](https://github.com/JacobRyanWillis/The_Vault/blob/main/LICENSE)
 
 ## Tests:
+
 N/A
 
 ## Features:
-Encrypted Passwords
+
+Encrypted Passwords through crypto.js
  
 ## Questions:
 
