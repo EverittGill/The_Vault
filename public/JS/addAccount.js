@@ -3,8 +3,9 @@ const addAccount = async (event) => {
   const account_name = document.querySelector("#account-name").value.trim();
   const URL = document.querySelector("#account-url").value.trim();
   const password = document.querySelector("#password").value.trim();
-  if (URL && !URL.includes("https://www.")) {
+  if (URL && !URL.includes("https://")) {
     alert("please enter a URL with https://");
+    return;
   }
   if (account_name && password) {
     const response = await fetch("/api/accounts", {
