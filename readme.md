@@ -34,7 +34,7 @@ The user should clone the repository from GitHub. To install dependecies run 'np
 
 - Application Screenshot:
 
-- ![Application Screenshot](/assets/website_screenshot.png)
+- ![Application Screenshot](/public/assets/website_screenshot.png)
 
 - [Repository URL:](https://github.com/JacobRyanWillis/The_Vault)
 
