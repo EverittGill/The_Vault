@@ -1,9 +1,12 @@
 {
   "name": "the_vault",
+  "homepage": "http://JacobRyanWillis.github.io/The_Vault",
   "version": "1.0.0",
   "description": "Password and Account storage",
   "main": "server.js",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seeds.js"
@@ -31,6 +34,7 @@
     "sequelize": "^6.31.0"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22"
   }
 }
